@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire avec auto-complétion d'adresse</title>
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+</head>
+<body>
+    <form>
+        <label for="address">Adresse :</label>
+        <input id="address" type="text" name="address" />
+    </form>
+    <script>
+        (function() {
+            var placesAutocomplete = places({
+                appId: 'HO0UK67GGG',
+                apiKey: 'b71877c8ac079f3c9ac4daea3cdafacd',
+                container: document.querySelector('#address')
+            });
+        })();
+    </script>
+</body>
+</html>
